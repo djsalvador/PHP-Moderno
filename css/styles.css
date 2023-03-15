@@ -1,0 +1,9 @@
+.center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpo {
+    background-color:rgb(244, 241, 241);
+}

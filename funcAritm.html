@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FUNÇÕES ARITMÉTICOS - PHP MODERNO</title>
+</head>
+
+<body class="corpo">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/infinito100x62.png" alt="Logo Avatar" height="45">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Página Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Formulários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Operadores Aritméticos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exprAritm.html">Expressões Aritméticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="funcAritm.html">Funções Aritméticas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container"></br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">FUNÇÕES ARITMÉTICAS</h5>
+                        <p class="card-text">Principais Funções Aritméticas em PHP Moderno.</p>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h4>Arredondamento para cima: <span class="badge badge-warning">ceil( )</span></h4>
+                        </p>
+                        <span class="badge badge-primary">
+                            <h5>Exemplos:</h5>
+                        </span>
+                        <p>
+                            <scan>ceil(56.7) = 57</scan>
+                        </p>
+                        <p>
+                            <scan>ceil(11.2) = 12</scan>
+                        </p>
+                        <p class="card-text">
+                        <p><span class="badge badge-danger">Observação:</span> O arredondamento se dará para cima em qualquer
+                            situação entre os valores de 0.1 a 0.9.</p>
+                        </p></br></br></br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h4>Arredondamento para baixo: <span class="badge badge-warning">floor( )</span></h4>
+                        </p>
+                        <span class="badge badge-primary">
+                            <h5>Exemplos:</h5>
+                        </span>
+                        <p>
+                            <scan>floor(56.7) = 56</scan>
+                        </p>
+                        <p>
+                            <scan>floor(11.2) = 11</scan>
+                        </p>
+                        <p class="card-text">
+                        <p><span class="badge badge-danger">Observação:</span> O arredondamento se dará para baixo em qualquer
+                            situação entre os valores de 0.1 a 0.9.</p>
+                        </p></br></br></br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h4>Arredondamento com precisão: <span class="badge badge-warning">round( )</span></h4>
+                        </p>
+                        <span class="badge badge-primary">
+                            <h5>Exemplos:</h5>
+                        </span>
+                        <p>
+                            <scan>round(56.7) = 57</scan>
+                        </p>
+                        <p>
+                            <scan>round(56.76, 1) = 56.8</scan>
+                        </p>
+                        <p class="card-text">
+                        <p><span class="badge badge-danger">Observação:</span> O primeiro elemento corresponde ao VALOR NUMÉRICO
+                            e o segundo
+                            elemento às CASAS DECIMAIS a serem arredondadas. Se não informar as casas decimais, o arredondamento
+                            será para o limite mais próximo.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Raiz quadrada: <span class="badge badge-warning">sqrt( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>sqrt(36) = 6</scan></p>
+                        <p><scan>sqrt(81) = 9</scan></p>
+                        <p><scan>sqrt(144) = 12</scan></p>
+                        <p><scan>sqrt(42) = 6.4807406984079</scan></p>
+                        </br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Divisão inteira: <span class="badge badge-warning">intdiv( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>intdiv(7, 2) = 3</scan></p>
+                        <p><scan>intdiv(17.54, 2) = 8</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> O resultado virá num número inteiro descartando os valores após a vírgula. O primeiro elemento é o número e o segundo elemento é o divisor.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Chamando o número PI: <span class="badge badge-warning">pi( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>pi() = 3.1415926535898</scan></p>
+                        <p><scan>M_PI = 3.1415926535898</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> M_PI é uma constante e não uma função, mas também pode ser usado para chamar o valor de PI.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Máximo de uma sequência: <span class="badge badge-warning">max( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>max(9, 12) = 12</scan></p>
+                        <p><scan>max(3, 6, 89, 3, 36, 27, 5, 1, 71) = 89</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> Será retornado o maior valor da sequência de números.</p>
+                        </p></br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Mínimo de uma sequência: <span class="badge badge-warning">min( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>min(9, 12) = 9</scan></p>
+                        <p><scan>min(3, 6, 89, 3, 36, 27, 5, 1, 71) = 1</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> Será retornado o menor valor da sequência de números.</p>
+                        </p></br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Potência: <span class="badge badge-warning">pow( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>pow(5, 2) = 25</scan></p>
+                        <p><scan>pow(2, 3) = 8</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> O primeiro elemento é o número e o segundo elemento é a potência a qual o número deverá ser elevado.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"><h4>Valor absoluto: <span class="badge badge-warning">abs( )</span></h4></p>
+                            <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                            <p><scan>abs(5.5) = 5.5</scan></p>
+                            <p><scan>abs(-21) = 21</scan></p>
+                            <p><scan>abs(-0.052) = 0.052</scan></p>
+                            <p><scan>abs(053.47) = 53.47</scan></p>
+                            </br></br></br></br></br></br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"><h4>Conversão de bases: <span class="badge badge-warning">base_convert( )</span></h4></p>
+                            <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                            <p><scan>base_convert(2143, 10, 16) = 85f</scan></p>
+                            <p><scan>base_convert(42, 8, 10) = 34</scan></p>
+                            <p><scan>base_convert(f2, 16, 2) = 11110010</scan></p>
+                            <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> O primeiro elemento é o número, o segundo
+                                elemento é a base numérica desse número e o terceiro elemento é a base numérica a ser convertido
+                                esse número (Decimal=10 / Binário=2 / Octal=8 / Hexadecimal=16).</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text"> <h4>Hipotenusa: <span class="badge badge-warning">hypot( )</span></h4></p>
+                            <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                            <p><scan>hypot(9, 12) = 15</scan></p>
+                            <p><scan>hypot(27, 36) = 45</scan></p>
+                            <p class="card-text">
+                                <p><span class="badge badge-danger">Observação:</span> O primeiro elemento corresponde ao CATETO OPOSTO e o segundo elemento ao CATETO ADJASCENTE.</p>
+                            </p></br></br></br></br>
+                        </div>
+                    </div>
+                </div>
+            </div></br>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Seno: <span class="badge badge-warning">sin( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>sin(30) = -0.9880316241</scan></p>
+                        <p><scan>sin(45) = 0.85090352453412</scan></p>
+                        <p><scan>sin(60) = -0.30481062110222</scan></p>
+                        <p><scan>sin(90) = 0.89399666360056</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> Retorna como resultado o seno (em radianos) de um determinado ângulo em radianos.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Cosseno: <span class="badge badge-warning">cos( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>cos(30) = 0.15425144988758</scan></p>
+                        <p><scan>cos(45) = 0.52532198881773</scan></p>
+                        <p><scan>cos(60) = -0.95241298041516</scan></p>
+                        <p><scan>cos(90) = -0.44807361612917</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> Retorna como resultado o cosseno (em radianos) de um determinado ângulo em radianos.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text"><h4>Tangente: <span class="badge badge-warning">tan( )</span></h4></p>
+                        <span class="badge badge-primary"><h5>Exemplos:</h5></span>
+                        <p><scan>tan(30) = -6.4053311966463</scan></p>
+                        <p><scan>tan(45) = 1.6197751905439</scan></p>
+                        <p><scan>tan(60) = 0.32004038937956</scan></p>
+                        <p><scan>tan(90) = -1.9952004122082</scan></p>
+                        <p class="card-text">
+                            <p><span class="badge badge-danger">Observação:</span> Retorna como resultado a tangente (em radianos) de um determinado ângulo em radianos.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+    </main></br>
+
+    <footer class="text-white bg-dark text-center">
+        <div class="container">
+            </br>
+            <p>Treinamento em PHP MODERNO</p>
+            <p>Para mais informações entre em contato com o desenvolvedor.</p>
+            <p>D.Salvador</p>
+            </br>
+        </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
