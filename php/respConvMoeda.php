@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>NÚMERO ALEATÓRIO - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
+    <title>CONVERSOR DE MOEDA MANUAL - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
 </head>
 
 <body>
@@ -49,20 +49,48 @@
 
     <main class="container"></br>
         <div class="container text-center">
-            <p><strong>RESULTADO - NÚMERO ALEATÓRIO</strong></p>
+            <p><strong>RESULTADO - CONVERSOR DE MOEDA (MANUAL)</strong></p>
         </div>
-
         <p>
             <?php
-            $num = random_int(0, 100);
-            echo    "<div class='card-body center'>";
-            echo        "<h5 class='center'><span class='badge badge-warning'>NÚMERO GERADO:</span></h5></br>";
-            echo        "<h1 class='card-subtitle mb-2 text-muted'>$num</h1>";
+            $r = (float)$_GET["reais"];
+            $reais = number_format($r, 2,',', '.');
+            $c = (float)$_GET["cotacao"];
+            $cotacao = number_format($c, 2, ',', '.');
+            $d = $r * $c;
+            $dolar = number_format($d, 2, ',', '.');
+
+            echo "<div class='row'>";
+            echo    "<div class='col-sm-4'>";
+            echo        "<div class='card'>";
+            echo             "<p class='card-text center'><strong>VALOR EM REAIS:</strong></p>";
+            echo             "<span class='badge badge-info'>";
+            echo                 "<h4>R$ </h4>";
+            echo             "<scan><h4>$reais</h4></scan>";
+            echo        "</div>";
             echo    "</div>";
+            echo    "<div class='col-sm-4'>";
+            echo        "<div class='card'>";
+            echo             "<p class='card-text center'><strong>COTAÇÃO (U$ 1 =):</strong></p>";
+            echo             "<span class='badge badge-warning'>";
+            echo                 "<h4>R$ </h4>";
+            echo             "<scan><h4>$cotacao</h4></scan>";
+            echo        "</div>";
+            echo    "</div>";
+            echo    "<div class='col-sm-4'>";
+            echo        "<div class='card'>";
+            echo             "<p class='card-text center'><strong>VALOR EM DÓLARES:</strong></p>";
+            echo             "<span class='badge badge-success'>";
+            echo                 "<h4>U$ </h4>";
+            echo             "<scan><h4>$dolar</h4></scan>";
+            echo        "</div>";
+            echo    "</div>";
+            echo "</div></br>";
+
             echo "<p class='center'><button class='btn btn-primary' onclick='javacript:history.go(-1)'>Voltar</button></p>";
+            echo "</div>";
             ?>
         </p>
-
     </main>
 
     <footer class="text-white bg-dark text-center">

@@ -40,7 +40,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../desafios.html">Desafios</a>
                         </li>
-                        <p class="center" ></p>
+                        <p class="center"></p>
                     </ul>
                 </div>
             </div>
@@ -72,7 +72,7 @@
     <footer class="text-white bg-dark text-center">
         <div class="container">
             </br>
-            <p>Sites de Testes em PHP MODERNO</p>
+            <p>Treinamento em PHP MODERNO</p>
             <p>Para mais informações entre em contato com o desenvolvedor.</p>
             <p>D.Salvador</p>
             </br>
