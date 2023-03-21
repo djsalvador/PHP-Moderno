@@ -54,7 +54,8 @@
         <p>
             <?php
             $r = $_GET["reais"];
-            $c = $_GET["cotacao"];
+            $c = $_GET["cot"];
+            echo "<div id='cot'></div>";
 
             if(is_numeric($r) && is_numeric($c) == true){
                 $d = $r * $c;

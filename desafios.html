@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="img/infinito100x62.png" alt="Logo Avatar" height="45">
+                    <img src="img/php-logo.png" alt="Logo" height="45">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -54,8 +54,8 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">DESAFIOS EM PHP MODERNO</h5>
-                        <p class="card-text">Exercícios resolvidos em PHP Moderno.</p>
+                        <h5 class="card-title center">DESAFIOS EM PHP MODERNO</h5>
+                        <p class="card-text center">Exercícios resolvidos em PHP Moderno.</p>
                     </div>
                 </div>
             </div>
@@ -113,14 +113,37 @@
                             <div class="form-group mx-sm-3 mb-2">
                                 <p><span class="badge badge-warning">R$</span></p>
                                 <label for="reais" class="sr-only">Reais</label>
-                                <input type="text" name="reais" id="reais" class="form-control" placeholder="Reais">
+                                <input type="double" name="reais" id="reais" class="form-control" placeholder="Reais">
                             </div>
                             <div class="form-group mx-sm-3 mb-2">
                                 <p><span class="badge badge-warning">R$</span></p>
                                 <label for="cotacao" class="sr-only">Cotação</label>
-                                <input type="text" name="cotacao" id="cotacao" class="form-control" placeholder="Cotação U$ 1 = ">
+                                <input type="double" name="cotacao" id="cotacao" class="form-control" placeholder="Cotação U$ 1 = ">
                             </div>
                             <p><button type="submit" class="btn btn-primary mb-2">Calcular</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h4>Conversor de Moeda (API):</h4>
+                        </p>
+                        <p class="card-text">
+                        <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir o valor em reais e o sistema puxa a cotação de uma API.</p>
+                        </p>
+                        <form action="php/respConvMoedaAPI.php" method="get" class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <p><span class="badge badge-warning">R$</span></p>
+                                <label for="reais" class="sr-only">Reais</label>
+                                <input type="double" name="reais" id="reais" class="form-control" placeholder="Reais">
+                            </div>
+                            <p><button id="btnCot" type="submit" class="btn btn-primary mb-2">Calcular</button></p>
                         </form>
                     </div>
                 </div>
@@ -133,6 +156,7 @@
         <div class="container">
             </br>
             <p>Treinamento em PHP MODERNO</p>
+            <a class="navbar-brand" href="#"><img src="img/php-elef-100x71.png" alt="Logo" width="100" height="71"></a>
             <p>Para mais informações entre em contato com o desenvolvedor.</p>
             <p>D.Salvador</p>
             </br>
