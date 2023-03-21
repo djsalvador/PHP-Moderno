@@ -15,7 +15,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="../img/infinito100x62.png" alt="Logo Avatar" height="45">
+                    <img src="../img/php-logo.png" alt="Logo Avatar" height="45">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,7 +69,7 @@
         <div class="container">
             </br>
             <p>Treinamento em PHP MODERNO</p>
-            <a class="navbar-brand" href="#"><img src="img/php-elef-100x71.png" alt="Logo" width="100" height="71"></a>
+            <a class="navbar-brand" href="#"><img src="../img/php-elef-100x71.png" alt="Logo" width="100" height="71"></a>
             <p>Para mais informações entre em contato com o desenvolvedor.</p>
             <p>D.Salvador</p>
             </br>
