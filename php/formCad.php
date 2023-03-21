@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>FORMULÁRIO EM PHP MODERNO - RESULTADO</title>
 </head>
 
@@ -23,22 +23,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Página Principal</a>
+                            <a class="nav-link" href="../index.html">Página Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="form.html">Formulários</a>
+                            <a class="nav-link" href="../form.html">Formulários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="opAritm.html">Operadores Aritméticos</a>
+                            <a class="nav-link" href="../opAritm.html">Operadores Aritméticos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="exprAritm.html">Expressões Aritméticas</a>
+                            <a class="nav-link" href="../exprAritm.html">Expressões Aritméticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="funcAritm.html">Funções Aritméticas</a>
+                            <a class="nav-link" href="../funcAritm.html">Funções Aritméticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="desafios.html">Desafios</a>
+                            <a class="nav-link" href="../desafios.html">Desafios</a>
                         </li>
                     </ul>
                 </div>
