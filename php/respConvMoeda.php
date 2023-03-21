@@ -56,11 +56,11 @@
             $r = $_GET["reais"];
             $c = $_GET["cotacao"];
 
-            if(is_numeric($r) && is_numeric($c) == true){
-                $d = $r * $c;
+            if (is_numeric($r) && is_numeric($c) == true) {
+                $d = $r / $c;
                 $reais = number_format($r, 2, ',', '.');
                 $cotacao = number_format($c, 2, ',', '.');
-                $dolar = number_format($d, 2, ',', '.'); 
+                $dolar = number_format($d, 2, ',', '.');
 
                 echo "<div class='row'>";
                 echo    "<div class='col-sm-4'>";
@@ -90,7 +90,7 @@
                 echo "</div></br>";
                 echo "<p class='center'><button class='btn btn-primary' onclick='javacript:history.go(-1)'>Voltar</button></p>";
                 echo "</div>";
-            }else {
+            } else {
                 echo "<div class= 'row col-sm-12 card'>";
                 echo     "<div class='card-body center'>";
                 echo        "<span class='badge badge-danger'>O VALOR OU A COTAÇÃO INSERIDA NÃO É UM NÚMERO VÁLIDO. DIGITE SOMENTE NÚMEROS.</span>";
@@ -107,6 +107,7 @@
         <div class="container">
             </br>
             <p>Treinamento em PHP MODERNO</p>
+            <a class="navbar-brand" href="#"><img src="img/php-elef-100x71.png" alt="Logo" width="100" height="71"></a>
             <p>Para mais informações entre em contato com o desenvolvedor.</p>
             <p>D.Salvador</p>
             </br>

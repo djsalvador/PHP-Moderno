@@ -73,6 +73,7 @@
         <div class="container">
             </br>
             <p>Treinamento em PHP MODERNO</p>
+            <a class="navbar-brand" href="#"><img src="img/php-elef-100x71.png" alt="Logo" width="100" height="71"></a>
             <p>Para mais informações entre em contato com o desenvolvedor.</p>
             <p>D.Salvador</p>
             </br>
