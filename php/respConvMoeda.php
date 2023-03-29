@@ -93,7 +93,7 @@
             } else {
                 echo "<div class= 'row col-sm-12 card'>";
                 echo     "<div class='card-body center'>";
-                echo        "<span class='badge badge-danger'>O VALOR OU A COTAÇÃO INSERIDA NÃO É UM NÚMERO VÁLIDO. DIGITE SOMENTE NÚMEROS.</span>";
+                echo        "<span class='badge badge-danger'>O VALOR OU A COTAÇÃO INSERIDA NÃO É UM NÚMERO VÁLIDO OU ESTÁ EM BRANCO. DIGITE SOMENTE NÚMEROS.</span>";
                 echo    "</div>";
                 echo "</div>";
                 echo "<p class='center'><button class='btn btn-primary' onclick='javacript:history.go(-1)'>Voltar</button></p>";

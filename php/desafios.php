@@ -69,7 +69,7 @@
                         <p class="card-text">
                         <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir um número (entre 0 e 100) e o sistema deverá gerar o seu antecessor e o seu sucessor.</p>
                         </p>
-                        <form action="php/respDesafioAntSuc.php" method="get" class="form-inline">
+                        <form action="respDesafioAntSuc.php" method="get" class="form-inline">
                             <div class="form-group mx-sm-3 mb-2">
                                 <label for="numAntecSucess" class="sr-only">Número</label>
                                 <input type="number" name="numAntecSucess" id="numAntecSucess" class="form-control" min="0" max="100">
@@ -91,14 +91,14 @@
                         <p class="card-text">
                         <p><span class="badge badge-danger">Exercício:</span> Gerar um número de forma aleatória (randômica) entre 0 e 100.</p>
                         </p>
-                        <form action="../php/respNumRandom.php" method="get" class="form-inline">
+                        <form action="respNumRandom.php" method="get" class="form-inline">
                             <button type="submit" class="btn btn-primary mb-2">Gerar Número em outra aba.</button>
                         </form>
                         <?php
                             $min = 0;
                             $max = 100;
                             $num = mt_rand($min, $max);
-                            echo "<button class='btn btn-primary mb-2' onClick='window.location.reload()'>Gerar Número ao lado:</button> <span class='badge badge-warning'>NÚMERO GERADO: $num </span>";
+                            echo "<button class='btn btn-primary mb-2' onClick='document.location.reload()'>Gerar Número ao lado:</button> <span class='badge badge-warning'>NÚMERO GERADO: $num </span>";
                         ?>
 
                     </div>
@@ -116,7 +116,7 @@
                         <p class="card-text">
                         <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir o valor em reais e a cotação do dolar do dia e o sistema deverá gerar o resultado.</p>
                         </p>
-                        <form action="php/respConvMoeda.php" method="get" class="form-inline">
+                        <form action="respConvMoeda.php" method="get" class="form-inline">
                             <div class="form-group mx-sm-3 mb-2">
                                 <p><span class="badge badge-warning">R$</span></p>
                                 <label for="reais" class="sr-only">Reais</label>
@@ -144,7 +144,7 @@
                         <p class="card-text">
                         <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir o valor em reais e o sistema puxa a cotação de uma API.</p>
                         </p>
-                        <form action="php/respConvMoedaAPI.php" method="get" class="form-inline">
+                        <form action="respConvMoedaAPI.php" method="get" class="form-inline">
                             <div class="form-group mx-sm-3 mb-2">
                                 <p><span class="badge badge-warning">R$</span></p>
                                 <label for="reais" class="sr-only">Reais</label>
