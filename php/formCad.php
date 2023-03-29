@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../funcAritm.html">Funções Aritméticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../desafios.html">Desafios</a>
+                            <a class="nav-link" href="desafios.php">Desafios</a>
                         </li>
                     </ul>
                 </div>

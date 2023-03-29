@@ -38,7 +38,7 @@
                             <a class="nav-link" href="../funcAritm.html">Funções Aritméticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../desafios.html">Desafios</a>
+                            <a class="nav-link" href="desafios.php">Desafios</a>
                         </li>
                         <p class="center"></p>
                     </ul>
@@ -54,7 +54,7 @@
 
         <p>
             <?php
-            $num = random_int(0, 100);
+            $num = random_int(0, 100); //random_int gera número aleatórios criptograficamente seguro
             echo    "<div class='card-body center'>";
             echo        "<h5 class='center'><span class='badge badge-warning'>NÚMERO GERADO:</span></h5></br>";
             echo        "<h1 class='card-subtitle mb-2 text-muted'>$num</h1>";
