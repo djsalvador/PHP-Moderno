@@ -52,8 +52,8 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title center">DESAFIOS EM PHP MODERNO</h5>
-                        <p class="card-text center">Exercícios resolvidos em PHP Moderno.</p>
+                        <h5 class="card-title">DESAFIOS EM PHP MODERNO</h5>
+                        <p class="card-text">Exercícios resolvidos em PHP Moderno.</p>
                     </div>
                 </div>
             </div>
@@ -151,6 +151,28 @@
                                 <input type="double" name="reais" id="reais" class="form-control" placeholder="Reais">
                             </div>
                             <p><button id="btnCot" type="submit" class="btn btn-primary mb-2">Calcular</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div></br>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">
+                        <h4>Números Reais:</h4>
+                        </p>
+                        <p class="card-text">
+                        <p><span class="badge badge-danger">Exercício:</span> Inserir um número real com até 3 digitos depois da vírgula. O sistema deve mostrar qual é a parte inteira e qual é a parte da fração.</p>
+                        </p>
+                        <form action="respNumReais.php" method="post" class="form-inline">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="numReais" class="sr-only">Números Reais:</label>
+                                <input type="number" step="0.001" name="numReais" id="numReais" class="form-control" placeholder="Número Real">
+                            </div>
+                            <p><input type="submit" value="Analisar" class="btn btn-primary mb-2"></p>
                         </form>
                     </div>
                 </div>

@@ -225,6 +225,7 @@
         echo    "</tbody>";
         echo "</table>";
         echo "</div>";
+        echo "<p class='center'><button class='btn btn-primary' onclick='javascript:history.go(-1)'>Voltar</button></p>";
         ?>
 
     </main>

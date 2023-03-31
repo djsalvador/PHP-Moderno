@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>CONVERSOR DE MOEDA MANUAL - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
+    <title>CONVERSOR DE MOEDA (MANUAL) - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
 </head>
 
 <body>
@@ -96,7 +96,7 @@
                 echo        "<span class='badge badge-danger'>O VALOR OU A COTAÇÃO INSERIDA NÃO É UM NÚMERO VÁLIDO OU ESTÁ EM BRANCO. DIGITE SOMENTE NÚMEROS.</span>";
                 echo    "</div>";
                 echo "</div>";
-                echo "<p class='center'><button class='btn btn-primary' onclick='javacript:history.go(-1)'>Voltar</button></p>";
+                echo "<p class='center'><button class='btn btn-primary' onclick='javascript:history.go(-1)'>Voltar</button></p>";
             }
 
             ?>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>ANTECESSOR E SUCESSOR - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
+    <title>NÚMEROS REAIS - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
 </head>
 
 <body>
@@ -49,24 +49,26 @@
 
     <main class="container"></br>
         <div class="container text-center">
-            <p><strong>RESULTADO - ANTECESSOR E SUCESSOR DE UM NÚMERO</strong></p>
+            <p><strong>RESULTADO - NÚMEROS REAIS</strong></p>
         </div>
+
         <p>
             <?php
-            $num = $_GET["numAntecSucess"];
-            $a = $num - 1;
-            $s = $num + 1;
-
-            echo "<div class='card-body center'>";
-            echo    "<div class='container'>";
-            echo        "<h4 class='center'><span class='badge badge-warning'>ANTECESSOR:</span> $a </h4>";
-            echo        "<h4 class='center'><span class='badge badge-danger'>NÚMERO DIGITADO:</span> $num </h4>";
-            echo        "<h4 class='center'><span class='badge badge-warning'>SUCESSOR:</span> $s </h4>";
-            echo    "<div></br></br>";
+            $numReal = $_POST["numReais"] ?? 0;
+            $intNum = (int)$numReal;
+            $fraNum = $numReal - $intNum;
+            echo    "<div class='card-body center'>";
+            echo        "<h5 class='center'><span class='badge badge-warning'>NÚMERO INSERIDO:</span></h5>";
+            echo        "<h1 class='card-subtitle mb-2 text-muted'>".number_format($numReal, 3, ',','.'). "</h1></br>";
+            echo        "<h5 class='center'><span class='badge badge-success'>PARTE INTEIRA:</span></h5>";
+            echo        "<h1 class='card-subtitle mb-2 text-muted'>". number_format($intNum, 0, ',', '.') . "</h1></br>";
+            echo        "<h5 class='center'><span class='badge badge-danger'>PARTE FRACIONADA:</span></h5>";
+            echo        "<h1 class='card-subtitle mb-2 text-muted'>".number_format($fraNum, 3, ',', '.'). "</h1></br>";
+            echo    "</div>";
             echo "<p class='center'><button class='btn btn-primary' onclick='javascript:history.go(-1)'>Voltar</button></p>";
-            echo "</div>";
             ?>
         </p>
+
     </main>
 
     <footer class="text-white bg-dark text-center">

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>NÚMERO ALEATÓRIO - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
+    <title>NÚMEROS RANDOMICOS - RESPOSTAS DO DESAFIO EM PHP MODERNO</title>
 </head>
 
 <body>
@@ -59,7 +59,7 @@
             echo        "<h5 class='center'><span class='badge badge-warning'>NÚMERO GERADO:</span></h5></br>";
             echo        "<h1 class='card-subtitle mb-2 text-muted'>$num</h1>";
             echo    "</div>";
-            echo "<p class='center'><button class='btn btn-primary' onclick='javacript:history.go(-1)'>Voltar</button></p>";
+            echo "<p class='center'><button class='btn btn-primary' onclick='javascript:history.go(-1)'>Voltar</button></p>";
             ?>
         </p>
 
