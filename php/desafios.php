@@ -23,19 +23,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Página Principal</a>
+                            <a class="nav-link" href="../index.html">Página Principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="form.html">Formulários</a>
+                            <a class="nav-link" href="../form.html">Formulários</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="opAritm.html">Operadores Aritméticos</a>
+                            <a class="nav-link" href="../opAritm.html">Operadores Aritméticos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="exprAritm.html">Expressões Aritméticas</a>
+                            <a class="nav-link" href="../exprAritm.html">Expressões Aritméticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="funcAritm.html">Funções Aritméticas</a>
+                            <a class="nav-link" href="../funcAritm.html">Funções Aritméticas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Desafios</a>
@@ -95,10 +95,10 @@
                             <button type="submit" class="btn btn-primary mb-2">Gerar Número em outra aba.</button>
                         </form>
                         <?php
-                            $min = 0;
-                            $max = 100;
-                            $num = mt_rand($min, $max);
-                            echo "<button class='btn btn-primary mb-2' onClick='document.location.reload()'>Gerar Número ao lado:</button> <span class='badge badge-warning'>NÚMERO GERADO: $num </span>";
+                        $min = 0;
+                        $max = 100;
+                        $num = mt_rand($min, $max);
+                        echo "<button class='btn btn-primary mb-2' onClick='document.location.reload()'>Gerar Número ao lado:</button> <span class='badge badge-warning'>NÚMERO GERADO: $num </span>";
                         ?>
 
                     </div>
@@ -142,7 +142,7 @@
                         <h4>Conversor de Moeda (API):</h4>
                         </p>
                         <p class="card-text">
-                        <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir o valor em reais e o sistema puxa a cotação de uma API.</p>
+                        <p><span class="badge badge-danger">Exercício:</span> O usuário deverá inserir o valor em reais e o sistema puxa a cotação da API do BC.</p>
                         </p>
                         <form action="respConvMoedaAPI.php" method="get" class="form-inline">
                             <div class="form-group mx-sm-3 mb-2">

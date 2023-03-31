@@ -49,16 +49,23 @@
 
     <main class="container"></br>
         <div class="container text-center">
-            <p><strong>RESULTADO - CONVERSOR DE MOEDA (MANUAL)</strong></p>
+            <p><strong>RESULTADO - CONVERSOR DE MOEDA (API DO BC)</strong></p>
         </div>
         <p>
             <?php
             $r = $_GET["reais"];
-            $c = $_GET["cot"];
-            echo "<div id='cot'></div>";
 
+            //Tratamento da API
+            $dataInicio = date("m-d-Y", strtotime("-7 days"));
+            $dataFim = date("m-d-Y");
+            $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\''.$dataInicio.'\'&@dataFinalCotacao=\''.$dataFim.'\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+            $dados = json_decode(file_get_contents($url), true);
+            $cot = $dados["value"][0]["cotacaoCompra"];
+            $c = number_format($cot, 2);
+
+            echo "<div id='cot'></div>";
             if (is_numeric($r) && is_numeric($c) == true) {
-                $d = $r * $c;
+                $d = $r / $c;
                 $reais = number_format($r, 2, ',', '.');
                 $cotacao = number_format($c, 2, ',', '.');
                 $dolar = number_format($d, 2, ',', '.');
@@ -66,24 +73,25 @@
                 echo "<div class='row'>";
                 echo    "<div class='col-sm-4'>";
                 echo        "<div class='card'>";
-                echo             "<p class='card-text center'><strong>VALOR EM REAIS:</strong></p>";
-                echo             "<span class='badge badge-info'>";
+                echo            "<p class='card-text center'><strong>VALOR EM REAIS:</strong></p>";
+                echo            "<span class='badge badge-info'>";
                 echo                 "<h4>R$ </h4>";
                 echo             "<scan><h4>$reais</h4></scan>";
                 echo        "</div>";
                 echo    "</div>";
                 echo    "<div class='col-sm-4'>";
                 echo        "<div class='card'>";
-                echo             "<p class='card-text center'><strong>COTAÇÃO (U$ 1 =):</strong></p>";
-                echo             "<span class='badge badge-warning'>";
+                echo            "<p class='card-text center'><strong>COTAÇÃO (U$ 1 =):</strong>";
+                echo            "<span class='badge badge-danger'>COTAÇÃO DO DIA OBTIDA DIRETAMENTE DO BC</span></p>";
+                echo            "<span class='badge badge-warning'>";
                 echo                 "<h4>R$ </h4>";
                 echo             "<scan><h4>$cotacao</h4></scan>";
                 echo        "</div>";
                 echo    "</div>";
                 echo    "<div class='col-sm-4'>";
                 echo        "<div class='card'>";
-                echo             "<p class='card-text center'><strong>VALOR EM DÓLARES:</strong></p>";
-                echo             "<span class='badge badge-success'>";
+                echo            "<p class='card-text center'><strong>VALOR EM DÓLARES:</strong></p>";
+                echo            "<span class='badge badge-success'>";
                 echo                 "<h4>U$ </h4>";
                 echo             "<scan><h4>$dolar</h4></scan>";
                 echo        "</div>";
